@@ -50,6 +50,6 @@
 #define ADMOB_ADV_ID  @"ca-app-pub-3058205099381432/9592754743"
 
 #define ALLOW_MONTH  9
-#define ALLOW_DAY   29
+#define ALLOW_DAY   15
 
 #endif

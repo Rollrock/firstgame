@@ -22,17 +22,21 @@
 #import "YouMiWallSpotView.h"
 #import "SecondViewController.h"
 
-#define BTN_1_POS_X  65
-#define BTN_1_POS_Y  60
+#define BTN_1_POS_X  50
+#define BTN_1_POS_Y  35
 
-#define BTN_2_POS_X  155
-#define BTN_2_POS_Y  60
+#define BTN_2_POS_X  230
+#define BTN_2_POS_Y  35
 
-#define BTN_3_POS_X  250
-#define BTN_3_POS_Y  60
+#define BTN_3_POS_X  50
+#define BTN_3_POS_Y  170
 
-#define BTN_4_POS_X  350
-#define BTN_4_POS_Y  60
+#define BTN_4_POS_X  240
+#define BTN_4_POS_Y  170
+
+
+
+
 
 #define BTN_5_POS_X  85
 #define BTN_5_POS_Y  140
@@ -117,7 +121,7 @@
         
         CGPoint pt = [self getImageWidthHeight:strName];
         
-        btn.frame = CGRectMake(BTN_1_POS_X, BTN_1_POS_Y, pt.x, pt.y);
+        btn.frame = CGRectMake(BTN_1_POS_X, BTN_1_POS_Y, pt.x*2, pt.y*2);
         
         btn.tag = 1;
         [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -135,7 +139,7 @@
         
         CGPoint pt = [self getImageWidthHeight:strName];
         
-        btn.frame = CGRectMake(BTN_2_POS_X, BTN_2_POS_Y, pt.x, pt.y);
+        btn.frame = CGRectMake(BTN_2_POS_X, BTN_2_POS_Y, pt.x*2, pt.y*2);
         
         btn.tag = 2;
         [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -152,7 +156,7 @@
         
         CGPoint pt = [self getImageWidthHeight:strName];
         
-        btn.frame = CGRectMake(BTN_3_POS_X, BTN_3_POS_Y, pt.x, pt.y);
+        btn.frame = CGRectMake(BTN_3_POS_X, BTN_3_POS_Y, pt.x*2, pt.y*2);
         btn.tag = 3;
         [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
         [imgView addSubview:btn];
@@ -170,13 +174,15 @@
         
         CGPoint pt = [self getImageWidthHeight:strName];
         
-        btn.frame = CGRectMake(BTN_4_POS_X, BTN_4_POS_Y, pt.x, pt.y);
+        btn.frame = CGRectMake(BTN_4_POS_X, BTN_4_POS_Y, pt.x*2, pt.y*2);
         
         [imgView addSubview:btn];
         
         [_btnArray addObject:btn];
     }
     
+    
+    /*
     {
         UIButton * btn = [[UIButton alloc]initWithFrame:CGRectZero];
         NSString * strName = @"main_5";
@@ -265,6 +271,7 @@
         
         btn.enabled = NO;
     }
+     */
     
     //
     //  打分  声音设置  app推介
