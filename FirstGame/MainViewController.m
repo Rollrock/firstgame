@@ -21,6 +21,7 @@
 #import "YouMiWallSpot.h"
 #import "YouMiWallSpotView.h"
 #import "SecondViewController.h"
+#import "SettingViewController.h"
 
 #define BTN_1_POS_X  50
 #define BTN_1_POS_Y  35
@@ -335,9 +336,9 @@
             
             [helpView addSubview:askBtn];
             
-            if( ![appDel canShowAdv] )
+            //if( ![appDel canShowAdv] )
             {
-                askBtn.enabled = NO;
+                //askBtn.hidden = NO;
             }
         }
 
@@ -354,7 +355,7 @@
             
             if( ![appDel canShowAdv] )
             {
-                askBtn.enabled = NO;
+                askBtn.hidden = YES;
             }
         }
     }
@@ -366,24 +367,42 @@
 {
     NSLog(@"advClick");
     
+    AppDelegate * appDel = [[UIApplication sharedApplication] delegate];
+    
+    if( [appDel canShowAdv ] )
     {
-        if ([YouMiWallSpot isReady]) {
-            [YouMiWallSpot showSpotViewWithBlock:^{
-                NSLog(@"积分插播退出");
-            }];
+        {
+            if ([YouMiWallSpot isReady]) {
+                [YouMiWallSpot showSpotViewWithBlock:^{
+                    NSLog(@"积分插播退出");
+                }];
+            }
         }
     }
+    else
+    {
+        
+    }
+
+    
+    
+   
 }
 
 // 展示自己的app集合
 -(void)appClick
 {
+    SettingViewController * vc = [[SettingViewController alloc]initWithNibName:nil bundle:nil];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    /*
     NSLog(@"appClick");
     
     AppsViewController * vc = [[AppsViewController alloc]init];
     
     [self presentViewController:vc animated:YES completion:nil];
-    
+    */
 }
 
 -(void)scoreClick

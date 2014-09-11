@@ -49,7 +49,7 @@
 //admob 广告
 #define ADMOB_ADV_ID  @"ca-app-pub-3058205099381432/9592754743"
 
-#define ALLOW_MONTH  9
-#define ALLOW_DAY   15
+#define ALLOW_MONTH  10
+#define ALLOW_DAY   1
 
 #endif
