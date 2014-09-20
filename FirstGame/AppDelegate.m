@@ -47,7 +47,7 @@
     NSCalendar * cal = [NSCalendar currentCalendar];
     
     [data setCalendar:cal];
-    [data setYear:2014];
+    [data setYear:ALLOW_YEAR];
     [data setMonth:ALLOW_MONTH];
     [data setDay:ALLOW_DAY];
     
