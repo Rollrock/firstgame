@@ -53,7 +53,6 @@
 		4855D4C319A237ED00E350D7 /* second_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855D4BF19A237ED00E350D7 /* second_2@2x.png */; };
 		4855D4C419A237ED00E350D7 /* second_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855D4C019A237ED00E350D7 /* second_3@2x.png */; };
 		4855D4C519A237ED00E350D7 /* second_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4855D4C119A237ED00E350D7 /* second_4@2x.png */; };
-		4855D50D19A392DE00E350D7 /* libOpenIDFA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4855D50819A391CD00E350D7 /* libOpenIDFA.a */; };
 		4855D50E19A392DE00E350D7 /* libYouMi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4855D50919A391CD00E350D7 /* libYouMi.a */; };
 		4878DB6B197E9435000C8868 /* num_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 4878DB6A197E9435000C8868 /* num_wrong.png */; };
 		4878DB6E197E9572000C8868 /* Number2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4878DB6D197E9572000C8868 /* Number2ViewController.m */; };
@@ -232,7 +231,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4855D50D19A392DE00E350D7 /* libOpenIDFA.a in Frameworks */,
 				4855D50E19A392DE00E350D7 /* libYouMi.a in Frameworks */,
 				48FA3A8D198FCFE2005BF281 /* StoreKit.framework in Frameworks */,
 				48FA3A89198FCFC6005BF281 /* QuartzCore.framework in Frameworks */,
@@ -760,7 +758,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s";
@@ -794,6 +792,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -809,6 +808,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstGame/FirstGame-Prefix.pch";
 				INFOPLIST_FILE = "FirstGame/FirstGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FirstGame/youmi/lib",
@@ -829,6 +829,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FirstGame/FirstGame-Prefix.pch";
 				INFOPLIST_FILE = "FirstGame/FirstGame-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FirstGame/youmi/lib",

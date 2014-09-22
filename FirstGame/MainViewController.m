@@ -114,6 +114,9 @@
     [self.view addSubview:imgView];
     
     
+    NSLog(@"screen w:%f h:%f",SCREEN_WIDTH,SCREEN_HEIGHT);
+    
+    
     {
         UIButton * btn = [[UIButton alloc]initWithFrame:CGRectZero];
         NSString * strName = @"main_1";
@@ -384,9 +387,6 @@
         
     }
 
-    
-    
-   
 }
 
 // 展示自己的app集合
